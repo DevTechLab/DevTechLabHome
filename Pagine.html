@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Tuo Sito</title>
+    <style>
+        /* Reset CSS per rimuovere i margini e i padding predefiniti del browser */
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Stili per la top bar */
+        .top-bar {
+            background-color: #00aaff; /* Blu azzurro */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        /* Stili per il logo */
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Stili per il nome del sito */
+        .site-name {
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Stili per il menu a tendina */
+        .menu {
+            position: relative;
+        }
+
+        .menu-button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .menu-list {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+            border: 1px solid #ccc;
+        }
+
+        .menu-list li {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu-list a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Animazione per il menu a tendina */
+        .menu-button:focus + .menu-list,
+        .menu-list:hover {
+            display: block;
+        }
+
+        /* Stili per il contenuto della pagina */
+        .content {
+            margin-top: 80px; /* Per compensare l'altezza della top bar */
+            padding: 20px;
+        }
+
+        /* Aggiungi animazione di scroll */
+        .content {
+            animation: scroll-animation 1s ease-in-out;
+        }
+
+        @keyframes scroll-animation {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo del Sito">
+        </div>
+        <div class="site-name">
+            Il Tuo Sito
+        </div>
+        <div class="menu">
+            <button class="menu-button">Menu</button>
+            <ul class="menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chi Siamo</a></li>
+                <li><a href="#">Servizi</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <!-- Contenuto della pagina -->
+        <h1>Benvenuti su Il Tuo Sito</h1>
+        <p>Questo è un esempio di contenuto per la tua pagina web.</p>
+    </div>
+</body>
+</html>
