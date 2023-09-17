@@ -43,3 +43,25 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00;
 }
+
+
+@media (max-width: 767px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        /* Esempio: Modifica lo sfondo per i tablet */
+        background-color: lightgreen;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        background-color: lightgray;
+    }
+}
+
+
