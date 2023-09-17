@@ -1,3 +1,18 @@
+
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  flex: 1; /* immagine */
+}
+
+.text {
+  flex: 1; /* testo */
+}
+
 body {
     margin: 0;
     padding: 0;
