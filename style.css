@@ -1,5 +1,8 @@
-
-
+.image {
+  flex: 1;
+  max-width: 50%; /* Riduci la larghezza massima dell'immagine al 50% del contenitore */
+  height: auto; /* Mantiene l'aspetto proporzionato quando si ridimensiona la larghezza */
+}
 .container {
   display: flex;
   align-items: center;
